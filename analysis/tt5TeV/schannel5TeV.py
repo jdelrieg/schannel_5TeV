@@ -668,16 +668,16 @@ class AnalysisProcessor(processor.ProcessorABC):
         njets_nom, nbtags_nom, nujets_nom = GetNjetNbtagsNujets(goodJets)
         nbtagnjets = GetNBtagNJets(njets_nom, nbtags_nom)
         ht_nom = ak.sum(goodJets.pt,axis=-1)
-        j0_nom, drjj_nom, drjjmedian_nom, mjj_nom, ptjj_nom,drjjmax_nom = GetJetVariables(goodJets)
-        u0_nom, druu_nom, druumedian_nom, muu_nom, ptuu_nom,druumax_nom = GetJetVariables(goodJets[(goodJets.isBtag==0)])
+        j0_nom, drjj_nom, drjjmedian_nom, mjj_nom, ptjj_nom = GetJetVariables(goodJets)
+        u0_nom, druu_nom, druumedian_nom, muu_nom, ptuu_nom = GetJetVariables(goodJets[(goodJets.isBtag==0)])
         ptSumVecAll_nom, ptSumVeclb_nom, dRlb_nom, st_nom   = GetJetLepVar(goodJets, leps)
         ptSumVecAll_fak, ptSumVeclb_fak, dRlb_fak, st_fak   = GetJetLepVar(goodJets, fakes)
 
 
         # Loop over the hists we want to fill
         for syst in systList:
-          j0, drjj, drjjmedian, mjj, ptjj, drjjmax   = (j0_nom, drjj_nom, drjjmedian_nom, mjj_nom, ptjj_nom,drjjmax_nom)
-          u0, druu, druumedian, muu, ptuu, druumax   = (u0_nom, druu_nom, druumedian_nom, muu_nom, ptuu_nom, druumax_nom)
+          j0, drjj, drjjmedian, mjj, ptjj   = (j0_nom, drjj_nom, drjjmedian_nom, mjj_nom, ptjj_nom)
+          u0, druu, druumedian, muu, ptuu   = (u0_nom, druu_nom, druumedian_nom, muu_nom, ptuu_nom)
           ptSumVecAll, ptSumVeclb, dRlb, st = (ptSumVecAll_nom, ptSumVeclb_nom, dRlb_nom, st_nom)
           njets, nbtags, nujets = (njets_nom, nbtags_nom, nujets_nom)
           ht_var = ht_nom
@@ -696,8 +696,8 @@ class AnalysisProcessor(processor.ProcessorABC):
             nujets_var = nujets
             ht_var = ak.sum(goodJets.pt,axis=-1)
             met_pt = metpt
-            j0, drjj, drjjmedian, mjj, ptjj, drjjmax   = GetJetVariables(goodJets)
-            u0, druu, druumedian, muu, ptuu, druumax   = GetJetVariables(goodJets[(goodJets.isBtag==0)])
+            j0, drjj, drjjmedian, mjj, ptjj   = GetJetVariables(goodJets)
+            u0, druu, druumedian, muu, ptuu   = GetJetVariables(goodJets[(goodJets.isBtag==0)])
             ptSumVecAll, ptSumVeclb, dRlb, st = GetJetLepVar(goodJets, leps)
 
           jet0pt  = ak.flatten(j0.pt)
@@ -781,10 +781,10 @@ class AnalysisProcessor(processor.ProcessorABC):
               weights_dijet = weights[dijet_cut]
               weights_dijuu = weights[dijuu_cut]
               fdrjjmed = ak.flatten(drjjmedian[dijet_cut])
-              fdrjjmax = ak.flatten(drjjmax[dijet_cut])
+              #fdrjjmax = ak.flatten(drjjmax[dijet_cut])
               fdrjjmin = ak.flatten(drjj[dijet_cut])
               hout['medianDRjj'].fill(sample=histAxisName, channel=ch, level=lev, medianDRjj=fdrjjmed, syst=syst, weight=weights_dijet)
-              hout['maxDRjj'].fill(sample=histAxisName, channel=ch, level=lev, maxDRjj=fdrjjmax, syst=syst, weight=weights_dijet)
+              #hout['maxDRjj'].fill(sample=histAxisName, channel=ch, level=lev, maxDRjj=fdrjjmax, syst=syst, weight=weights_dijet)
               hout['minDRjj'].fill(sample=histAxisName, channel=ch, level=lev, minDRjj=fdrjjmin, syst=syst, weight=weights_dijet)
               if fillAll:
                 fmjj = ak.flatten(mjj[dijet_cut])
