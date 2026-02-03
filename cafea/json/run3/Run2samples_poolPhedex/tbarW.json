@@ -1,0 +1,16 @@
+{
+  "xsec": 39.66,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "tbarW",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_tbarW_NDSkim/output_2462.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_tbarW_NDSkim/output_3385.root"
+  ],
+  "nEvents": 490341,
+  "nGenEvents": 7749000,
+  "nSumOfWeights": 251902163.2100001,
+  "isData": false
+}

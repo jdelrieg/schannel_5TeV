@@ -1,0 +1,26 @@
+{
+  "xsec": 1.0,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "HighEGJet",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_0.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_10.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_11.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_12.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_1.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_2.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_3.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_4.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_5.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_6.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_7.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_8.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_9.root"
+  ],
+  "nEvents": 13535057,
+  "nGenEvents": 13535057,
+  "nSumOfWeights": 13535057,
+  "isData": true
+}

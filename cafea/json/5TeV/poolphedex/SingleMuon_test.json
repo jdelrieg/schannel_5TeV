@@ -1,0 +1,16 @@
+{
+  "xsec": 1.0,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "SingleMuon",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_111.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_112.root"
+  ],
+  "nEvents": 796506500,
+  "nGenEvents": 796506500,
+  "nSumOfWeights": 796506500,
+  "isData": true
+}

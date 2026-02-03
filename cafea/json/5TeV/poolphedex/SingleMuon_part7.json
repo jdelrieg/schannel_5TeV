@@ -1,0 +1,28 @@
+{
+  "xsec": 1.0,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "SingleMuon",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_99.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_100.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_101.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_102.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_103.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_104.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_105.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_106.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_107.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_108.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_109.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_110.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_111.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_merge/Tree_SingleMuon_112.root"
+  ],
+  "nEvents": 796506500,
+  "nGenEvents": 796506500,
+  "nSumOfWeights": 796506500,
+  "isData": true
+}

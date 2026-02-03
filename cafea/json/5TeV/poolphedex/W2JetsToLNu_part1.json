@@ -1,0 +1,32 @@
+{
+  "xsec": 799.38,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "W2JetsToLNu",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_64.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_67.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_70.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_38.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_69.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_1.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_23.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_27.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_58.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_72.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_95.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_51.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_106.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_2.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_14.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_77.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_4.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/191013_155335/0000/myNanoProdMc5TeVMC_NANO_89.root"
+  ],
+  "nEvents": 10206624,
+  "nGenEvents": 10206624,
+  "nSumOfWeights": 10181664.0,
+  "isData": false
+}

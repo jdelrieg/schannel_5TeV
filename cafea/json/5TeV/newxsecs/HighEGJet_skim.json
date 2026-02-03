@@ -1,0 +1,26 @@
+{
+  "xsec": 1.0,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "HighEGJet",
+  "options": "",
+  "files": [
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_0.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_10.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_11.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_12.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_1.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_2.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_3.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_4.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_5.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_6.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_7.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_8.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/HighEGJet/merged/HighEGJet_9.root"
+  ],
+  "nEvents": 13535057,
+  "nGenEvents": 13535057,
+  "nSumOfWeights": 13535057,
+  "isData": true
+}

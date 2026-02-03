@@ -1,0 +1,23 @@
+{
+  "xsec": 21159.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "WJetsToLNu",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_13.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_32.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_9.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_12.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_40.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_43.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_55.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_60.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_3.root"
+  ],
+  "nEvents": 18661797,
+  "nGenEvents": 18661797,
+  "nSumOfWeights": 972734134763.0591,
+  "isData": false
+}

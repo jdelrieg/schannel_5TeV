@@ -1,0 +1,32 @@
+{
+  "xsec": 21159.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "WJetsToLNu",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_59.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_44.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_35.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_34.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_62.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_48.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_75.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_20.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_31.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_54.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_6.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_41.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_25.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_71.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_16.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_10.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_56.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_224140/0000/myNanoProdMc5TeVMC_NANO_47.root"
+  ],
+  "nEvents": 18661797,
+  "nGenEvents": 18661797,
+  "nSumOfWeights": 972734134763.0591,
+  "isData": false
+}

@@ -1,0 +1,18 @@
+{
+  "xsec": 1.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "SingleMuon",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_Run2017G-17Nov2017-v1/191122_134724/0002/myNanoProdMc5TeV_NANO_2615.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_Run2017G-17Nov2017-v1/191122_134724/0002/myNanoProdMc5TeV_NANO_2616.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_Run2017G-17Nov2017-v1/191122_134724/0002/myNanoProdMc5TeV_NANO_2617.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/SingleMuon_Run2017G-17Nov2017-v1/191122_134724/0002/myNanoProdMc5TeV_NANO_2618.root"
+  ],
+  "nEvents": 796506500,
+  "nGenEvents": 796506500,
+  "nSumOfWeights": 796506500,
+  "isData": true
+}

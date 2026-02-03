@@ -1,0 +1,23 @@
+{
+  "xsec": 1.778072,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "tW",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8ext1/190827_223923/0000/myNanoProdMc5TeVMC_NANO_1.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8ext1/190827_223923/0000/myNanoProdMc5TeVMC_NANO_2.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8ext1/190827_223923/0000/myNanoProdMc5TeVMC_NANO_4.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8ext1/190827_223923/0000/myNanoProdMc5TeVMC_NANO_7.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8ext1/190827_223923/0000/myNanoProdMc5TeVMC_NANO_5.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8ext1/190827_223923/0000/myNanoProdMc5TeVMC_NANO_8.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8ext1/190827_223923/0000/myNanoProdMc5TeVMC_NANO_6.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_PSweights_5p02TeV-powheg-pythia8/190827_223937/0000/myNanoProdMc5TeVMC_NANO_13.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_PSweights_5p02TeV-powheg-pythia8/190827_223937/0000/myNanoProdMc5TeVMC_NANO_9.root"
+  ],
+  "nEvents": 1935292,
+  "nGenEvents": 1935292,
+  "nSumOfWeights": 5184957.407825654,
+  "isData": false
+}

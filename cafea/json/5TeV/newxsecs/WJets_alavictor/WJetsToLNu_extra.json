@@ -1,0 +1,17 @@
+{
+  "xsec": 21159.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "WJetsToLNu",
+  "options": "",
+  "files": [
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/Wjets/extra/WJets_NanoAOD_8.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/Wjets/extra/WJets_NanoAOD_19.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/Wjets/extra/WJets_NanoAOD_65.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/Wjets/extra/WJets_NanoAOD_66.root"
+  ],
+  "nEvents": 1025470,
+  "nGenEvents": 1025470,
+  "nSumOfWeights": 53501924301.55191,
+  "isData": false
+}

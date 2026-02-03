@@ -1,0 +1,16 @@
+{
+  "xsec": 1.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "TT_TuneCP5_5p02TeV-powheg-pythia8/190827_224001/0000/myNanoProdMc5TeVMC_NANO_13.root",
+    "TT_TuneCP5_5p02TeV-powheg-pythia8/190827_224001/0000/myNanoProdMc5TeVMC_NANO_32.root"
+  ],
+  "nEvents": 6000000,
+  "nGenEvents": 6000000,
+  "nSumOfWeights": 324651187.7988678,
+  "isData": false
+}

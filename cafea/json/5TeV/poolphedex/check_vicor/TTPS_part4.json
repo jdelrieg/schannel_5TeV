@@ -1,0 +1,21 @@
+{
+  "xsec": 66.8,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "ttPS",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/TT_nanoAOD/08986D25-BAAE-E911-A864-008CFA197D8C_nano.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/TT_nanoAOD/CE453901-A7AB-E911-80A5-549F3525DB98_nano.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/TT_nanoAOD/1AF9B39F-D6AE-E911-9B1C-A0369FF88232_nano.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/TT_nanoAOD/785825C8-66AE-E911-8791-842B2B180C66_nano.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/TT_nanoAOD/0A802BF6-ECAD-E911-A8FA-141877411970_nano.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/TT_nanoAOD/7678A9FA-ECAD-E911-A6DF-1866DAEA79D0_nano.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/TT_nanoAOD/2AE44920-98AE-E911-8AAD-B083FECF8ACD_nano.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/TT_nanoAOD/C231B641-34AE-E911-B4DA-782BCB537E89_nano.root"
+  ],
+  "nEvents": 6000000,
+  "nGenEvents": 6000000,
+  "nSumOfWeights": 324651187.7988679,
+  "isData": false
+}

@@ -1,0 +1,30 @@
+{
+  "xsec": 54.2776,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "WZ",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/E21431E1-5A66-4244-B47D-899569CBA45A.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/034356D0-103E-0A46-817B-5C7A1EBDBF7E.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/1DC6A62A-974D-4648-BB46-313F663DA995.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/7E3D19DD-0140-9241-B08E-3F274C731240.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/EBD56FF5-D9FB-8142-AC5B-38DE552B2926.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/5D1BBE78-9C20-0147-900B-E9E9E3A68E6E.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/C723F74C-8C61-D84F-B18D-D2753E8EB135.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/A2FD2B5C-7E4D-5149-AB4B-D5E76C8D6DDA.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/0D38D325-67C1-2748-8678-C0C48FD151C4.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/D4C69621-7C7D-A74C-BB6B-F5249A6D79F2.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/5E38DBF0-0FAA-AE41-9B5F-290477E42DAB.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/14302F4E-77A3-5A4D-9D73-3FDB8C6F885E.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/1B380E02-B4DC-754A-93B5-0794888929C5.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/E6CEADC9-864E-7A46-969C-30BEBEE86D1C.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/81350672-48E5-5E4E-971B-AE4B84B9A0F8.root",
+    "/pool/phedex/topEFT/nanoAODv9/2018/mc/WZ/27808410-EEBD-AA4F-94B4-175891A61B97.root"
+  ],
+  "nEvents": 7940000,
+  "nGenEvents": 7940000,
+  "nSumOfWeights": 7940000.0,
+  "isData": false
+}

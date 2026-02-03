@@ -1,0 +1,15 @@
+{
+  "xsec": 61526.7,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "WJetsToLNu",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WJetsToLNu_NDSkim/output_3730.root"
+  ],
+  "nEvents": 236446,
+  "nGenEvents": 81051269,
+  "nSumOfWeights": 1188874708.6423702,
+  "isData": false
+}

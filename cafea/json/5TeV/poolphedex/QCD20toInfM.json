@@ -1,0 +1,22 @@
+{
+  "xsec": 137900000.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "QCD20toInfM",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_1.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_2.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_3.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_4.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_5.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_6.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_7.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_8.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-20toInf_MuEnrichedPt15_TuneCP5_5p02TeV_pythia8/nano_9.root"
+  ],
+  "nEvents": 1635011,
+  "nGenEvents": 1635011,
+  "nSumOfWeights": 1635011.0,
+  "isData": false
+}

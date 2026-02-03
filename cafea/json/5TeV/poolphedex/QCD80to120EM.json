@@ -1,0 +1,21 @@
+{
+  "xsec": 358300.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "QCD80to120EM",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-80to120_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_1.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-80to120_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_2.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-80to120_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_3.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-80to120_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_4.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-80to120_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_5.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-80to120_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_6.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-80to120_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_7.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-80to120_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_8.root"
+  ],
+  "nEvents": 902366,
+  "nGenEvents": 902366,
+  "nSumOfWeights": 902366.7285080244,
+  "isData": false
+}

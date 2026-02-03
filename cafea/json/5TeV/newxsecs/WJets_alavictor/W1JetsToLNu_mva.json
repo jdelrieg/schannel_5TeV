@@ -1,0 +1,21 @@
+{
+  "xsec": 2930.27,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "W1JetsToLNu",
+  "options": "",
+  "files": [
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/W1jets/for_mva/W1Jets_NanoAOD_12.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/W1jets/for_mva/W1Jets_NanoAOD_14.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/W1jets/for_mva/W1Jets_NanoAOD_27.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/W1jets/for_mva/W1Jets_NanoAOD_46.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/W1jets/for_mva/W1Jets_NanoAOD_48.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/W1jets/for_mva/W1Jets_NanoAOD_50.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/W1jets/for_mva/W1Jets_NanoAOD_57.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_alavictor/W1jets/for_mva/W1Jets_NanoAOD_64.root"
+  ],
+  "nEvents": 1386241,
+  "nGenEvents": 1386241,
+  "nSumOfWeights": 1384189.0,
+  "isData": false
+}

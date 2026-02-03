@@ -1,0 +1,26 @@
+{
+  "xsec": 1.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "HighEGJet",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2628.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2629.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2630.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2643.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2644.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2645.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2646.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2647.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2648.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2649.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2650.root",
+    "/beegfs/data/nanoAODv4/5TeV/nanoAODnoSkim/HighEGJet_Run2017G-17Nov2017-v2/191122_134710/0002/myNanoProdMc5TeV_NANO_2651.root"
+  ],
+  "nEvents": 367807155,
+  "nGenEvents": 367807155,
+  "nSumOfWeights": 367807155,
+  "isData": true
+}

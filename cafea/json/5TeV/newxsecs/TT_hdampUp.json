@@ -1,0 +1,31 @@
+{
+  "xsec": 69.5,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "TT_hdampUp",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_13.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_9.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_12.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_3.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_11.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_1.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_17.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_2.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_14.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_4.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_7.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_5.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_15.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_8.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_6.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_16.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/nanoAODnoSkim/TT_hdampUP_TuneCP5_5p02TeV-powheg-pythia8/190827_224103/0000/myNanoProdMc5TeVMC_NANO_10.root"
+  ],
+  "nEvents": 2000000,
+  "nGenEvents": 2000000,
+  "nSumOfWeights": 108233241.32721744,
+  "isData": false
+}

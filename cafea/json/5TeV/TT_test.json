@@ -1,0 +1,16 @@
+{
+  "xsec": 66.8,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "tt",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/TT_TuneCP5_5p02TeV-powheg-pythia8/190827_224001/0000/myNanoProdMc5TeVMC_NANO_35.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/nanoAODnoSkim/TT_TuneCP5_5p02TeV-powheg-pythia8/190827_224001/0000/myNanoProdMc5TeVMC_NANO_12.root"
+  ],
+  "nEvents": 6000000,
+  "nGenEvents": 6000000,
+  "nSumOfWeights": 324656366.9734807,
+  "isData": false
+}

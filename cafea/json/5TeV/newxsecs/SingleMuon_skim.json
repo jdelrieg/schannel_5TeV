@@ -1,0 +1,27 @@
+{
+  "xsec": 1.0,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "SingleMuon",
+  "options": "",
+  "files": [
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_0.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_10.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_11.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_12.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_13.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_1.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_2.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_3.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_4.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_5.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_6.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_7.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_8.root",
+    "/lustrefs/hdd_pool_dir/nanoAODv4/5TeV/dataSkims/SingleMuon/merged/SingleMuon_9.root"
+  ],
+  "nEvents": 7078231,
+  "nGenEvents": 7078231,
+  "nSumOfWeights": 7078231,
+  "isData": true
+}

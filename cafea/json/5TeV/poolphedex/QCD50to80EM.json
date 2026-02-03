@@ -1,0 +1,18 @@
+{
+  "xsec": 3053000.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "QCD50to80EM",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-50to80_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_1.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-50to80_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_2.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-50to80_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_3.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-50to80_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_4.root",
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/QCD_Pt-50to80_EMEnriched_TuneCP5_5p02TeV_pythia8/nano_5.root"
+  ],
+  "nEvents": 911913,
+  "nGenEvents": 911913,
+  "nSumOfWeights": 911913.0,
+  "isData": false
+}

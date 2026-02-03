@@ -1,0 +1,17 @@
+{
+  "xsec": 2141.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "DYJetsToLLMLL50",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/ciencias/nanoAODv4/5TeV/nanoAODnoSkim/DYJetsToLL_MLL-50_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_223846/0000/myNanoProdMc5TeVMC_NANO_13.root",
+    "/pool/ciencias/nanoAODv4/5TeV/nanoAODnoSkim/DYJetsToLL_MLL-50_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_223846/0000/myNanoProdMc5TeVMC_NANO_32.root",
+    "/pool/ciencias/nanoAODv4/5TeV/nanoAODnoSkim/DYJetsToLL_MLL-50_TuneCP5_5020GeV-amcatnloFXFX-pythia8/190827_223846/0000/myNanoProdMc5TeVMC_NANO_19.root"
+  ],
+  "nEvents": 9992985,
+  "nGenEvents": 9992985,
+  "nSumOfWeights": 51246943260.712585,
+  "isData": false
+}

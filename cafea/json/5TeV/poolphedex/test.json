@@ -1,0 +1,14 @@
+{
+  "xsec": 15.15,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "tchannel",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/vrbouza/proyectos/top5tev/STtop_nanoAOD/nano_228.root"
+  ],
+  "nEvents": 29448000,
+  "nGenEvents": 29448000,
+  "nSumOfWeights": 29436712.55621625,
+  "isData": false
+}

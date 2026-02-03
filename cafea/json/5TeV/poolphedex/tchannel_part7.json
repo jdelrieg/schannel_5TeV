@@ -1,0 +1,18 @@
+{
+  "xsec": 15.15,
+  "year": "2016",
+  "treeName": "Events",
+  "histAxisName": "tchannel",
+  "options": "",
+  "files": [
+    "/beegfs/data/TOPnanoAODv6/2016/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/TopNanoAODv6-1-1_2016/200610_203005/0000/tree_18.root",
+    "/beegfs/data/TOPnanoAODv6/2016/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/TopNanoAODv6-1-1_2016/200610_203005/0000/tree_94.root",
+    "/beegfs/data/TOPnanoAODv6/2016/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/TopNanoAODv6-1-1_2016/200610_203005/0000/tree_68.root",
+    "/beegfs/data/TOPnanoAODv6/2016/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/TopNanoAODv6-1-1_2016/200610_203005/0000/tree_70.root",
+    "/beegfs/data/TOPnanoAODv6/2016/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_PSweights_13TeV-powheg-pythia8/TopNanoAODv6-1-1_2016/200610_203005/0000/tree_9.root"
+  ],
+  "nEvents": 29448000,
+  "nGenEvents": 29448000,
+  "nSumOfWeights": 29436712.55621625,
+  "isData": false
+}

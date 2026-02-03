@@ -1,0 +1,28 @@
+{
+  "xsec": 5.1014,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "WZTo3LNu",
+  "options": "",
+  "WCnames": [],
+  "files": [
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_1007.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_1129.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_1390.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_1680.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_1742.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_1801.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_1928.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_2469.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_2828.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_2931.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_83.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_67.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_75.root",
+    "/pool/phedex/topEFT/nanoAODv9/29mar2022/NDskims/bkg/UL18_WZTo3LNu_NDSkim/output_76.root"
+  ],
+  "nEvents": 4412926,
+  "nGenEvents": 11819283,
+  "nSumOfWeights": 92463303.83245,
+  "isData": false
+}

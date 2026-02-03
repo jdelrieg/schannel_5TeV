@@ -1,0 +1,16 @@
+{
+  "xsec": 1.0,
+  "year": -1,
+  "treeName": "Events",
+  "histAxisName": "DoubleMuon",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/DoubleMuon/merged/DoubleMuon_0.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/DoubleMuon/merged/DoubleMuon_1.root",
+    "/pool/phedex/userstorage/juanr/nanoAODv4/5TeV/dataSkims/DoubleMuon/merged/DoubleMuon_2.root"
+  ],
+  "nEvents": 19372060,
+  "nGenEvents": 19372060,
+  "nSumOfWeights": 19372060,
+  "isData": true
+}
