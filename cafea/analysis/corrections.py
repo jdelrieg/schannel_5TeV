@@ -222,9 +222,13 @@ def AttachMuonSF(muons, year=2018):
   loose_err = SFevaluator['MuonLooseSF_{year}_er'.format(year=year)](eta,pt)
   tight_err = SFevaluator['MuonTightSF_{year}_er'.format(year=year)](eta,pt)
 
+#  muons['sf_nom'] = loose_sf * tight_sf
+#  muons['sf_hi']  = (loose_sf + loose_err) * (tight_sf + tight_err)  #This was before ARC comments, when we haven't propagated the effect of calculating SFs in DY samples and applying them in ttbar
+#  muons['sf_lo']  = (loose_sf - loose_err) * (tight_sf - tight_err)
   muons['sf_nom'] = loose_sf * tight_sf
-  muons['sf_hi']  = (loose_sf + loose_err) * (tight_sf + tight_err)
-  muons['sf_lo']  = (loose_sf - loose_err) * (tight_sf - tight_err)
+  muons['sf_hi']  = (loose_sf * tight_sf) + np.sqrt(loose_err*loose_err + tight_err*tight_err + 0.005*loose_sf*tight_sf*0.005*loose_sf*tight_sf)
+  muons['sf_lo']  = (loose_sf * tight_sf) - np.sqrt(loose_err*loose_err + tight_err*tight_err + 0.005*loose_sf*tight_sf*0.005*loose_sf*tight_sf)
+
 
 def AttachElectronSF(electrons, year=2018):
   '''
@@ -249,9 +253,13 @@ def AttachElectronSF(electrons, year=2018):
   tight_sf_err     = SFevaluator['ElecTightSF_{year}_er'.format(year=year)](np.abs(eta),pt)
 
   if year == '5TeV':
+#    electrons['sf_nom'] = loose_sf * tight_sf
+#    electrons['sf_hi']  = (loose_sf + loose_sf_err) * (tight_sf + tight_sf_err) #This was before ARC comments, when we haven't propagated the effect of calculating SFs in DY samples and applying them in ttbar
+#    electrons['sf_lo']  = (loose_sf - loose_sf_err) * (tight_sf - tight_sf_err)
+
     electrons['sf_nom'] = loose_sf * tight_sf
-    electrons['sf_hi']  = (loose_sf + loose_sf_err) * (tight_sf + tight_sf_err)
-    electrons['sf_lo']  = (loose_sf - loose_sf_err) * (tight_sf - tight_sf_err)
+    electrons['sf_hi']  = (loose_sf * tight_sf) + np.sqrt(loose_sf_err*loose_sf_err + tight_sf_err*tight_sf_err + 0.01*loose_sf*tight_sf*0.01*loose_sf*tight_sf)
+    electrons['sf_lo']  = (loose_sf * tight_sf) - np.sqrt(loose_sf_err*loose_sf_err + tight_sf_err*tight_sf_err + 0.01*loose_sf*tight_sf*0.01*loose_sf*tight_sf)  
   else:
     electrons['sf_nom'] = reco_sf * loose_sf * loose_ttH_sf * tight_sf
     electrons['sf_hi']  = (reco_sf + reco_sf_err) * (loose_sf + loose_sf_err) * (loose_ttH_sf + loose_ttH_sf_err) * (tight_sf + tight_sf_err)
@@ -436,10 +444,7 @@ def GetTriggerSF5TeV(eta, ch='e'):
 
 # MC efficiencies
 def GetMCeffFunc(WP='medium', year=2018, flav='b'):
-  pathToBtagMCeff = cafea_path('data/btagSF/UL/btagMCeff_%s.pkl.gz'%str(year)) #original (eta hasta 2.4)
-  pathToBtagMCeff = cafea_path('data/btagSF/UL/btagMCeff_2bin.pkl.gz')  #el que venia usando para llegar a eta 4.7 (divido en 2 bines el rango 1.8-4.7)
-  #pathToBtagMCeff = cafea_path('data/btagSF/UL/btagMCeff_eta3.pkl.gz') #prueba para cortar en eta 3 (extiendo el bin de 2.4 a 3)
-  pathToBtagMCeff = cafea_path('data/btagSF/UL/btagMCeff_2p5_onebin.pkl.gz')
+  pathToBtagMCeff = cafea_path('data/btagSF/UL/btagMCeff_%s.pkl.gz'%str(year))
   hists = {}
   with gzip.open(pathToBtagMCeff) as fin:
     hin = pickle.load(fin)
@@ -466,7 +471,7 @@ def GetBtagEff(eta, pt, flavor, year=2018):
   elif year==2018: return MCeffFunc_2018(pt, eta, flavor)
   elif year=='5TeV': return MCeffFunc_5TeV(pt, eta, flavor)
 
-def GetBTagSF_old(eta, pt, flavor, year=2018, sys=0):
+def GetBTagSF(eta, pt, flavor, year=2018, sys=0):
 
   # Efficiencies and SFs for UL only available for 2017 and 2018
   if year == '2016APV': year = 2016
@@ -481,31 +486,15 @@ def GetBTagSF_old(eta, pt, flavor, year=2018, sys=0):
 
   return (SF)
 
-def GetBtagSF5TeV_old(pt, eta, flav, isBtagJets, doSys=True):
+def GetBtagSF5TeV(pt, eta, flav, isBtagJets, doSys=True):
   abseta = np.abs(eta);
-#  print('initial avseta',*abseta)
-#  print('cheated avseta',*ak.ones_like(abseta)*5)
-  
-  #abseta=ak.where(abseta>2.3,2.3,abseta)                     #cheating a little bit
-
-#  bJetSF_cheat   = GetBTagSF(abseta, ak.ones_like(pt)*5, flav, year='5TeV')
   bJetSF   = GetBTagSF(abseta, pt, flav, year='5TeV')
   bJetEff  = GetBtagEff(abseta, pt, flav, year='5TeV')
-
-#  print('isbtag',*isBtagJets)
-#  print('final avseta',*abseta,type(abseta),'\n pt',*pt,'\n falv',*flav)
-#  print('bJetSF_cheated',*bJetSF_cheat)
-#  print('bJetSF_true',*bJetSF)
-#  print('bjeteff',*bJetEff)
-#  print(*GetBtagEff(np.ones_like(abseta)*2.3, pt, flav, year='5TeV'))
- 
   bJetEff_data = bJetEff*bJetSF
   isNotBtagJets = np.invert(isBtagJets) 
 
   pMC     = ak.prod(bJetEff       [isBtagJets], axis=-1) * ak.prod((1-bJetEff       [isNotBtagJets]), axis=-1)
-#  print('pMC',*pMC)
   pData   = ak.prod(bJetEff_data  [isBtagJets], axis=-1) * ak.prod((1-bJetEff_data  [isNotBtagJets]), axis=-1)
-#  print('pData',*pData)
   pMC      = ak.where(pMC==0,1,pMC) # removeing zeroes from denominator...
   btagSF   = pData  /pMC
   if not doSys: return btagSF
@@ -519,101 +508,7 @@ def GetBtagSF5TeV_old(pt, eta, flav, isBtagJets, doSys=True):
   btagSFUp = pDataUp/pMC
   btagSFDo = pDataDo/pMC
   return btagSF, btagSFUp, btagSFDo
-
-
-def GetBTagSF(eta, pt, flavor, year=2018, sys=0):
-
-  # Efficiencies and SFs for UL only available for 2017 and 2018
-  if year == '2016APV': year = 2016
-  if   year == 2016: SFevaluatorBtag = BTagScaleFactor(cafea_path("data/btagSF/DeepFlav_2016.csv"),wplabel.upper())
-  elif year == 2017: SFevaluatorBtag = BTagScaleFactor(cafea_path("data/btagSF/UL/DeepJet_UL17.csv"),wplabel.upper())
-  elif year == 2018: SFevaluatorBtag = BTagScaleFactor(cafea_path("data/btagSF/UL/DeepJet_UL18.csv"),wplabel.upper())
-  elif year == '5TeV': SFevaluatorBtag = BTagScaleFactor(cafea_path("data/btagSF/DeepCSV_94XSF_V5_B_F.csv"),wplabel.upper())#, 'mujets,mujets,incl') #comb,comb,incl
-  SF=SFevaluatorBtag.eval("central",flavor,eta,pt)
-  if   sys==0 : SF=SFevaluatorBtag.eval("central",flavor,eta,pt)
-  elif sys==1 : SF=SFevaluatorBtag.eval("up",flavor,eta,pt)
-  elif sys==-1: SF=SFevaluatorBtag.eval("down",flavor,eta,pt)
-  elif sys=='bc': 
-    #First, we have to define the flavours to split the variations and the corresponding hadronFlavour
-    flavors = {
-        0: ["light"],
-        4: ["bc"],
-        5: ["bc"]
-    }
-    #Next, define the variations to fill only the heavy jets
-    btag_bc_up = SF
-    btag_bc_down = SF
-    for f, f_syst in flavors.items():
-        if sys in f_syst:
-          btag_bc_up = np.where(abs(flavor) == f,SFevaluatorBtag.eval("up", flavor,np.abs(eta),pt),btag_bc_up)
-          
-          btag_bc_down = np.where(abs(flavor) == f,SFevaluatorBtag.eval("down",flavor, np.abs(eta),pt),btag_bc_down)
-    SF = [btag_bc_up,btag_bc_down]
-  elif sys=='light':
-    #First, we have to define the flavours to split the variations and the corresponding hadronFlavour
-    flavors = {
-        0: ["light"],
-        4: ["bc"],
-        5: ["bc"]
-    }
-    #Next, define the variations to fill only the light jets
-    btag_light_up = SF
-    btag_light_down = SF
-    for f, f_syst in flavors.items():
-        if sys in f_syst:
-          btag_light_up = np.where(abs(flavor) == f,SFevaluatorBtag.eval("up", flavor,np.abs(eta),pt),btag_light_up)
-          
-          btag_light_down = np.where(abs(flavor) == f,SFevaluatorBtag.eval("down", flavor,np.abs(eta),pt),btag_light_down)
-    SF = [btag_light_up,btag_light_down]
-  return (SF)
-
-def GetBtagSF5TeV(events, pt, eta, flav, isBtagJets, doSys=True):
-  abseta = np.abs(eta);
-  bJetSF   = GetBTagSF(abseta, pt, flav, year='5TeV')
-  bJetEff  = GetBtagEff(abseta, pt, flav, year='5TeV')
-  bJetEff_data = bJetEff*bJetSF
-  isNotBtagJets = np.invert(isBtagJets) 
-  pMC     = ak.prod(bJetEff       [isBtagJets], axis=-1) * ak.prod((1-bJetEff       [isNotBtagJets]), axis=-1)
-  pData   = ak.prod(bJetEff_data  [isBtagJets], axis=-1) * ak.prod((1-bJetEff_data  [isNotBtagJets]), axis=-1)
-  pMC      = ak.where(pMC==0,1,pMC) # removeing zeroes from denominator...
-  btagSF   = pData  /pMC
-  if not doSys: return btagSF
-  
-  bJetSFUp = GetBTagSF(abseta, pt, flav, year='5TeV', sys=1)
-  bJetSFDo = GetBTagSF(abseta, pt, flav, year='5TeV', sys=-1)
-  bJetEff_dataUp = bJetEff*bJetSFUp
-  bJetEff_dataDo = bJetEff*bJetSFDo
-  pDataUp = ak.prod(bJetEff_dataUp[isBtagJets], axis=-1) * ak.prod((1-bJetEff_dataUp[isNotBtagJets]), axis=-1)
-  pDataDo = ak.prod(bJetEff_dataDo[isBtagJets], axis=-1) * ak.prod((1-bJetEff_dataDo[isNotBtagJets]), axis=-1)
-  btagSFUp = pDataUp/pMC
-  btagSFDo = pDataDo/pMC
-  
-  #Get the variations for light/heavy jets and compute the final SFs
-  bJetSFLightUp = GetBTagSF(abseta, pt, flav, year='5TeV', sys='light')[0]
-  bJetSFLightDo = GetBTagSF(abseta, pt, flav, year='5TeV', sys='light')[1]
-  bJetEffLight_dataUp = bJetEff*bJetSFLightUp #The efficiencies are always the same
-  bJetEffLight_dataDo = bJetEff*bJetSFLightDo
-  pDataLightUp = ak.prod(bJetEffLight_dataUp[isBtagJets], axis=-1) * ak.prod((1-bJetEffLight_dataUp[isNotBtagJets]), axis=-1)
-  pDataLightDo = ak.prod(bJetEffLight_dataDo[isBtagJets], axis=-1) * ak.prod((1-bJetEffLight_dataDo[isNotBtagJets]), axis=-1)
-  btagSFLightUp = pDataLightUp/pMC #The final event weight for the varied light jets. The pMC is the same
-  btagSFLightDo = pDataLightDo/pMC
-  
-  bJetSFbcUp = GetBTagSF(abseta, pt, flav, year='5TeV', sys='bc')[0]
-  bJetSFbcDo = GetBTagSF(abseta, pt, flav, year='5TeV', sys='bc')[1]
-  bJetEffbc_dataUp = bJetEff*bJetSFbcUp
-  bJetEffbc_dataDo = bJetEff*bJetSFbcDo
-  pDatabcUp = ak.prod(bJetEffbc_dataUp[isBtagJets], axis=-1) * ak.prod((1-bJetEffbc_dataUp[isNotBtagJets]), axis=-1)
-  pDatabcDo = ak.prod(bJetEffbc_dataDo[isBtagJets], axis=-1) * ak.prod((1-bJetEffbc_dataDo[isNotBtagJets]), axis=-1)
-  btagSFbcUp = pDatabcUp/pMC #The event weight for the varied heavy jets
-  btagSFbcDo = pDatabcDo/pMC
-  
-  #To use this in the analysis lets store the results in the events collection
-  events["btagSFLightUp"] = btagSFLightUp/btagSF #The variation is w.r.t the nominal value aka 1
-  events["btagSFLightDo"] = btagSFLightUp/btagSF
-  events["btagSFbcUp"] = btagSFbcUp/btagSF
-  events["btagSFbcDo"] = btagSFbcDo/btagSF
-  
-  return btagSF, btagSFUp, btagSFDo #Left these as placeholder for the analysis    
+   
 '''
 def LoadTriggerSFs5TeV(samplename = 'tt'):
   pathToTrigger = cafea_path('data/5TeV/triggerSFs.pkl.gz')
@@ -746,8 +641,8 @@ extJEC_data.add_weight_sets([
 #  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_DATA_L2Residual_AK4PF.txt'),
 #  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_DATA_L3Absolute_AK4PF.txt'),
 #  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_DATA_Uncertainty_AK4PF.txt'),
-  #"* * "+cafea_path('data/JEC/Autumn18_V7_DATA_SF_AK4PF.jersf.txt'),
-  #"* * "+cafea_path('data/JEC/Autumn18_V7_DATA_PtResolution_AK4PF.jr.txt'),
+#  "* * "+cafea_path('data/JEC/Autumn18_V7_DATA_SF_AK4PFchs.jersf.txt'),
+#  "* * "+cafea_path('data/JEC/Autumn18_V7_DATA_PtResolution_AK4PFchs.jr.txt'),
   ])
 extJEC_data.finalize() 
 JECevaluator_data = extJEC_data.make_evaluator()
@@ -774,17 +669,17 @@ name_map['UnClusteredEnergyDeltaY'] = 'MetUnclustEnUpDeltaY'
 jet_factory_data = CorrectedJetsFactory(name_map, jec_stack_data)
 #
 extJEC = lookup_tools.extractor()
-#extJEC.add_weight_sets(["* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L2Relative_AK4PF.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L2Residual_AK4PF.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L1FastJet_AK4PF.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L3Absolute_AK4PF.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L1RC_AK4PF.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_Uncertainty_AK4PF.junc.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L2L3Residual_AK4PF.txt')])
+#extJEC.add_weight_sets(["* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L2Relative_AK4PFchs.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L2Residual_AK4PFchs.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L1FastJet_AK4PFchs.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L3Absolute_AK4PFchs.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L1RC_AK4PFchs.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_Uncertainty_AK4PFchs.junc.txt'),"* * "+cafea_path('data/JEC/Summer19UL18_V5_MC_L2L3Residual_AK4PFchs.txt')])
 extJEC.add_weight_sets([
 #  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_L1FastJet_AK4PF.txt'),
 #  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_L2L3Residual_AK4PF.txt'),
   "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_L2Relative_AK4PF.txt'),
 #  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_L2Residual_AK4PF.txt'),
 #  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_L3Absolute_AK4PF.txt'),
-  #"* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_Uncertainty_AK4PF.junc.txt'),       #one jes
-  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_UncertaintySources_AK4PFchs.junc.txt'),  #splitted jes 		.junc.txt en el original
+  #"* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_Uncertainty_AK4PFchs.junc.txt'),
+  "* * "+cafea_path('data/JEC/Spring18_ppRef5TeV_V4_MC_UncertaintySources_AK4PFchs.junc.txt'),
   "* * "+cafea_path('data/JEC/Autumn18_V7_MC_SF_AK4PF.txt'),
-  "* * "+cafea_path('data/JEC/Autumn18_V7_MC_PtResolution_AK4PF.txt'),
+  "* * "+cafea_path('data/JEC/Autumn18_V7_MC_PtResolution_AK4PF.txt'),#'data/JEC/Autumn18_V7_MC_PtResolution_AK4PFchs.jr.txt'
   ])
 extJEC.finalize()
 
@@ -792,10 +687,10 @@ JECevaluator = extJEC.make_evaluator()
 jec_names = ["Autumn18_V7_MC_SF_AK4PFchs","Autumn18_V7_MC_PtResolution_AK4PFchs","Spring18_ppRef5TeV_V4_MC_L1FastJet_AK4PF","Spring18_ppRef5TeV_V4_MC_L2L3Residual_AK4PF","Spring18_ppRef5TeV_V4_MC_L2Relative_AK4PF","Spring18_ppRef5TeV_V4_MC_L2Residual_AK4PF","Spring18_ppRef5TeV_V4_MC_L3Absolute_AK4PF"]#,"Spring18_ppRef5TeV_V4_MC_Uncertainty_AK4PF"] 
 jec_names = ["Autumn18_V7_MC_SF_AK4PF","Autumn18_V7_MC_PtResolution_AK4PF","Spring18_ppRef5TeV_V4_MC_L2Relative_AK4PF"]
 
+
 jec_types = ['MC', 'AbsStat', 'AbsScale', 'AbsMPF', 'Frag', 'ECAL', 'HCAL', 'Flavor', 'RelStat', 'RelPt', 'RelBal', 'RelJER', 'L3Res', 'Total']
 jec_regroup = ["Spring18_ppRef5TeV_V4_MC_UncertaintySources_AK4PFchs_%s"%(jec_type) for jec_type in jec_types]
 jec_names.extend(jec_regroup)
-
 
 jec_inputs = {name: JECevaluator[name] for name in jec_names}
 jec_stack = JECStack(jec_inputs)

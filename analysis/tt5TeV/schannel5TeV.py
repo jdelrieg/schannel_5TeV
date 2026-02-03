@@ -115,7 +115,7 @@ def GetJESMETvar(corrected_jets, met, jetptcut, btagwp, isData, var=''):
         metpt       = getattr(met, 'JES_'+var).down.pt
   cleanedJets["isGood"] = isTightJet(getattr(cleanedJets, jetptname), cleanedJets.eta, cleanedJets.jetId, jetPtCut=jetptcut)
   goodJets = cleanedJets[cleanedJets.isGood]
-  goodJets["isBtag"] = (goodJets.btagDeepB > btagwp)
+  goodJets["isBtag"] = (goodJets.btagDeepB > btagwp) & (abs(goodJets.eta)<2.5)
   btagSF = np.ones(len(goodJets), dtype=float) 
   if not isData: # btag SF
     btagSF = GetBtagSF5TeV(goodJets.pt, goodJets.eta, goodJets.hadronFlavour, goodJets.isBtag, False)

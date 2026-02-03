@@ -16,7 +16,7 @@ def isPresTau(pt, eta, dxy, dz, idDeepTau2017v2p1VSjet, minpt=20.0):
 def isTightTau(idDeepTau2017v2p1VSjet):
     return (idDeepTau2017v2p1VSjet>>2 & 1)
 
-def isTightJet(pt, eta, jet_id,jetPtCut=25.0,jetEtaCut=4.7): #3
+def isTightJet(pt, eta, jet_id,jetPtCut=25.0,jetEtaCut=2.4): #3
     mask = ((pt>jetPtCut) & (np.abs(eta)<jetEtaCut) & (jet_id>1)) 
     return mask
 
