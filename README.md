@@ -71,7 +71,7 @@ The table yields are calculated with:
 
     python analysis/tt5TeV/PrintYields_charge.py -p histos5TeV/22jan2023/
 
-## Datacards
+<!-- ## Datacards
 
 You need to create rootfiles and datacards to produce fits and extract the cross section.
 Rootfiles are created with `analysis/tt5TeV/SaveRootfile_conlowess.py` and then, datacards are created with `analysis/tt5TeV/CreateDatacard_v2.py`.
@@ -140,4 +140,4 @@ Few notes here:
 - This has to be ran in two steps, first with `-s 0` then with `-s 1`.
 - Add the option `-O` if the unblinded option is the desired one.
 - In the folder with the workspace, it has to be renamed as `combcard_2j1b3j1b3j2b.root` for the script to work.
-- Properly inside the script, there are two places where one or two POIs are defined, depending on which of the fits it is done.
+- Properly inside the script, there are two places where one or two POIs are defined, depending on which of the fits it is done. -->

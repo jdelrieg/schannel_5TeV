@@ -58,7 +58,7 @@ now = datetime.now()
 datatoday = str(now.strftime('%d')) + str(now.strftime('%B')).lower()[:3] + str(now.strftime('%Y'))[2:]
 datatoday = '30aug2023_tch'
 #datatoday = 'splitJES_0b_UE_met30_xTrigSF_splitPDFs_lumiUnc_mujetsB_JER_METfilters_tchannel'
-baseweb = '/nfs/fanae/user/jriego/www/public/tchannel5TeV/'
+#baseweb = '/nfs/fanae/user/jriego/www/public/tchannel5TeV/'
 
 
 # Convert string to list
@@ -68,53 +68,67 @@ if   isinstance(level, str) and ',' in level: level = level.replace(' ', '').spl
 lumi = 302; # pb
 year = 2017
 
+
+
 processDic = {
-  'tchan':  'tchannel', #tbarchannel',
-  'tbarchan':'tbarchannel',
+  'tchan':  'tchannel,tbarchannel',
   'tt': 'ttPS',#, ttPS',
   'tW': 'tbarW, tW',
-  'WJetsL':  'W0_lightjets, W1_lightjets, W2_lightjets, W3_lightjets, WJ_lightjets', #
-  'WJetsH':  'W0_heavyjets, W1_heavyjets, W2_heavyjets, W3_heavyjets, WJ_heavyjets', #
+  'schan': 'schannel,sbarchannel',
+  'WJets_light':  'W0_lightjets, W1_lightjets, W2_lightjets, W3_lightjets', #
+  'WJets_c':  'W0_cjets, W1_cjets, W2_cjets, W3_cjets', #
+  'WJets_b':  'W0_bjets, W1_bjets, W2_bjets, W3_bjets', #
   'QCD': 'QCD',
   'DY': 'DYJetsToLLMLL50, DYJetsToLLM10to50',
   'data' : 'SingleMuon, HighEGJet',
 }
-																										#
-diclegendlabels = {'None':'Data', 'tt':'$\\mathrm{t\\bar{t}}$', 'DY':'Drell-Yan','tchan':r'$t$ channel','WJetsL':'W+jets (l)', 'WJetsH':'W+jets (h)', 'QCD':'QCD'}
+
+processDic = {
+  'tchan':  'tchannel,tbarchannel',
+  'tt': 'ttPS',#, ttPS',
+  'tW': 'tbarW, tW',
+  'schan': 'schannel,sbarchannel',
+  'WJets': 'W0JetsToLNu, W1JetsToLNu, W2JetsToLNu, W3JetsToLNu',
+  'QCD': 'QCD',
+  'DY': 'DYJetsToLLMLL50, DYJetsToLLM10to50',
+  'data' : 'SingleMuon, HighEGJet',
+}
+
+
+diclegendlabels = {'None':'Data', 'tt':'$\\mathrm{t\\bar{t}}$', 'DY':'Drell-Yan','tchan':r'$t$ channel','WJets_0b':'W+jets (0b)', 'WJets_1b':'W+jets (1b)','WJets_2b':'W+jets (2b)', 'QCD':'QCD'}#																										
+																										
+diclegendlabels = {'None':'Data', 'schan':r'$s$ channel', 'tt':'$\\mathrm{t\\bar{t}}$', 'DY':'DY+jets','tchan':r'$t$ channel','WJets':'W+jets', 'QCD':'QCD'}																							
+
+
 
 processDic_noQCD = processDic.copy()
 processDic_noQCD.pop('QCD')
 
-								  #
-bkglist    = ['tchan', 'tt', 'tW','WJetsL', 'WJetsH',  'DY', 'QCD']#'tchan', 
-bkglist_noQCD = ['tchan','tt', 'tW','WJetsL',  'WJetsH', 'DY']#'tchan', 
-bkgnormunc = [0.02,0.05, 0.056, 0.2,  0.2, 0.3, 0.3]
-								#
+
+bkglist    = ['tchan', 'tt', 'tW','WJets_0b', 'WJets_1b','WJets_2b',  'DY', 'QCD']#'tchan', 
+bkglist_noQCD = ['tchan','tt', 'tW','WJets_0b', 'WJets_1b','WJets_2b','DY']#'tchan', 
+
+bkglist    = ['tchan', 'tt', 'tW','schan','WJets':'W+jets',  'DY', 'QCD']#'tchan', 
+bkglist_noQCD = ['tchan','tt', 'tW','schan','WJets':'W+jets','DY']#'tchan', 
 
 
-colordic ={
-  
-  'tt' : '#cc0000',
-  'tW' : '#ffc207',
-  'tchan' : '#EEC895',#'#fa00fa',
-  'WJetsL': '#76e865',
-  'WJetsH': '#198509',
-  'DY': '#3b78cb',
-  'QCD' : '#aaaaaa',
-}
+
+bkgnormunc = [0.02,0.05, 0.056,0.05, 0.2,  0.2,0.2, 0.3, 0.3]
+bkgnormunc = [0.02,0.05,0.05, 0.056, 0.2,  0.2,0.2, 0.3, 0.3]
+
+								
+
 
 colordic ={
   
   'tt' : '#BD1F01',
   'tW' : '#A96B59', 
   'tchan' :'#FFA90E',
-  'tbarchan' : '#FFA90E',
-  'WJetsL': '#92DADD',
-  'WJetsH':'#3F90DA',  
-  'DY':  '#94A4A2',
+  'schan': '#e76400',
+  'WJets':'#3F90DA',  
+  'DY':  '#832db6',
   'QCD' :'#717581',
 }
-
 
 
 colors = [colordic[k] for k in bkglist]
@@ -202,7 +216,11 @@ def RebinVar(p, var, level=None):
   elif var in ['dRlb']:
     b0 = 0.5; bN = 2.9
 
-
+  elif var in ['absu0eta']:
+    b0 = 0; bN = 5
+    bins= [0,0.5,1,1.5,2,2.5,3.5,5]	  
+    
   if b0 is not None:
     p.SetRebin(var, b0, bN, includeLower=True, includeUpper=True, binRebin=binRebin)
+    if var=='absu0eta':p.SetRebin(var,bins)
   return xtit
