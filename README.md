@@ -10,6 +10,11 @@ To execute all the samples, you can use the script `run5TeV.sh`.
 
 The config script, `analysis/tt5TeV/config.py` is imported by all the plotting scripts of the repo. It contains basic information about paths, rebinnings and other stuff. You might want to modify some of the paths, especially some of the output paths, which are by default created according to the current date. It also define some labels to use in the legends, etc.
 
+## QCD estimate
+To estimate QCD,run: (this is yet to be checked and explained)
+
+    python analysis/tt5TeV/QCD_asttbar.py -p outpath
+
 <!--  ## QCD estimate
 
 #### Nominal estimate
@@ -63,13 +68,13 @@ In this case, the relevant paths are directly hardcoded in the script.
 
 ## Master Plot
 
-The final pickle file and the master plots (yields and shapes) are produced with `MasterPlot_charge.py`script. This has to be run before creating the datacards. In order for it to work, tchannel and tbarchannel `.pkl` files have to be copied into a folder named `TTPS/` 
+The final pickle file and the master plots (yields and shapes) are produced with `MasterPlot.py`script. This has to be run before creating the datacards. In order for it to work, tchannel and tbarchannel `.pkl` files have to be copied into a folder named `TTPS/` 
 
-    python analysis/tt5TeV/MasterPlot_charge.py -p histos5TeV/22jan2023/ -n 64
+    python analysis/tt5TeV/MasterPlot.py -p histos5TeV/22jan2023/ -n 64
 
 The table yields are calculated with:
 
-    python analysis/tt5TeV/PrintYields_charge.py -p histos5TeV/22jan2023/
+    python analysis/tt5TeV/PrintYields.py -p histos5TeV/22jan2023/
 
 <!-- ## Datacards
 
