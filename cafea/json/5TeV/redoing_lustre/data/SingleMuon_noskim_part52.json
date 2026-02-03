@@ -1,0 +1,33 @@
+{
+  "xsec": 1.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "SingleMuon",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1047.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1002.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1048.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1003.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1049.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1004.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1050.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1005.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1051.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1006.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1052.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1007.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1053.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1008.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1054.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1009.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1148.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1149.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1057.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_1103.root"
+  ],
+  "nEvents": 803576887,
+  "nGenEvents": 803576887,
+  "nSumOfWeights": 803576887,
+  "isData": true
+}

@@ -1,0 +1,18 @@
+{
+  "xsec": 0.912,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "sbarchannel",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_antitop_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/antitop_schannel_NanoAOD_4.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_antitop_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/antitop_schannel_NanoAOD_2.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_antitop_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/antitop_schannel_NanoAOD_3.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_antitop_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/antitop_schannel_NanoAOD_1.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_antitop_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/antitop_schannel_NanoAOD_5.root"
+  ],
+  "nEvents": 500000,
+  "nGenEvents": 500000,
+  "nSumOfWeights": 122980.8608143359,
+  "isData": false
+}

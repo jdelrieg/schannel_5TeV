@@ -16,7 +16,7 @@ from coffea.util import load, save
 from coffea.nanoevents import NanoAODSchema
 
 #import tt5TeV
-import tchannel5TeV_charge
+import schannel5TeV
 from cafea.modules import samples
 from cafea.modules import fileReader
 
@@ -198,7 +198,7 @@ if __name__ == '__main__':
   if isinstance(pathModels, list):
     model = [pkl.load(open(p, 'rb')) for p in pathModels]
     print('')
-  processor_instance = tchannel5TeV_charge.AnalysisProcessor(samplesdict, model)  #donde pone tchannel5TeV poner tt5TeV para ttbar
+  processor_instance = schannel5TeV.AnalysisProcessor(samplesdict, model)  #donde pone tchannel5TeV poner tt5TeV para ttbar
   
   
 

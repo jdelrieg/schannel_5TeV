@@ -1,0 +1,28 @@
+{
+  "xsec": 2930.27,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "W1JetsToLNu",
+  "options": "",
+  "files": [
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_26.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_7.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_8.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_28.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_9.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_29.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_3.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_30.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_31.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_32.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_33.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_34.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_35.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_36.root",
+    "/pool/phedex/userstorage/jriego/nanoAODv4/5TeV/nanoAODnoSkim/W1JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W1Jets_NanoAOD_37.root"
+  ],
+  "nEvents": 13461390,
+  "nGenEvents": 13461390,
+  "nSumOfWeights": 13440614.0,
+  "isData": false
+}
