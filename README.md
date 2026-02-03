@@ -1,16 +1,16 @@
 ## Analysis
 
-The main analysis is in `analysis/tt5TeV/tchannel5TeV_charge.py`. To run it, use the `analysis/tt5TeV/run.py` scrip. You need to have json files with the samples. For example, send a job to process tt sample with 
+The main analysis is in `analysis/tt5TeV/schannel5TeV.py`. To run it, use the `analysis/tt5TeV/run.py` scrip. You need to have json files with the samples. For example, send a job to process tt sample with 
 
     python analysis/tt5TeV/run.py cafea/json/5TeV/newxsecs/TTPS_part0.json -n 64 -j -s 10000 -o TTPS -p outpath
 
-To execute all the samples, you can use the script `run5TeV_tchannel.sh`.
+To execute all the samples, you can use the script `run5TeV.sh`.
 
 ## The config script
 
 The config script, `analysis/tt5TeV/config.py` is imported by all the plotting scripts of the repo. It contains basic information about paths, rebinnings and other stuff. You might want to modify some of the paths, especially some of the output paths, which are by default created according to the current date. It also define some labels to use in the legends, etc.
 
-## QCD estimate
+<!--  ## QCD estimate
 
 #### Nominal estimate
 To estimate QCD, you need first to run the QCD MonteCarlo sample. To do so, some relaxation in the selection are needed. That is why the `analysis/tt5TeV/run.py` script hast to point at `analysis/tt5TeV/tchannel5TeV_QCD_fakerateshape.py` instead to the nominal `analysis/tt5TeV/tchannel5TeV_charge.py`. After that, just run the analysis in the common way:
@@ -32,7 +32,7 @@ This is the most delicate part in the QCD estimation. First, the full analysis (
 
 Those FRs (4 for each lepton flavour) should be then manually written in `analysis/tt5TeV/QCD_modifyer_shapes_binned.py`, and then the .pkl file with the shapes can be produced by running:
 
-    python analysis/tt5TeV/QCD_modifyer_shapes_binned.py -p outpath
+    python analysis/tt5TeV/QCD_modifyer_shapes_binned.py -p outpath -->
 
 ## Plotting and tables
 
