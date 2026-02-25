@@ -1,0 +1,33 @@
+{
+  "xsec": 1.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "SingleMuon",
+  "options": "",
+  "files": [
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_314.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_315.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_316.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_317.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_318.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_319.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_32.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_320.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_321.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_322.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_323.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_324.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_325.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_326.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_327.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_328.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_329.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_33.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_330.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/data/SingleMuon_noSkim/SingleMuon_NanoAOD_331.root"
+  ],
+  "nEvents": 803576887,
+  "nGenEvents": 803576887,
+  "nSumOfWeights": 803576887,
+  "isData": true
+}

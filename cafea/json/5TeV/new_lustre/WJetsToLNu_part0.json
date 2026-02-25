@@ -1,0 +1,31 @@
+{
+  "xsec": 21159.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "WJetsToLNu",
+  "options": "",
+  "files": [
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_56.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_1.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_55.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_10.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_62.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_11.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_63.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_12.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_64.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_13.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_14.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_15.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_67.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_16.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_68.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_17.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_69.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/WJetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/WJets_NanoAOD_18.root"
+  ],
+  "nEvents": 18661797,
+  "nGenEvents": 18661797,
+  "nSumOfWeights": 972734134763.0596,
+  "isData": false
+}

@@ -1,0 +1,28 @@
+{
+  "xsec": 17139.22,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "W0JetsToLNu",
+  "options": "",
+  "files": [
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_36.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_37.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_39.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_4.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_40.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_41.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_42.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_43.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_44.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_45.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_46.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_56.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_57.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_58.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W0JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W0JetsToLNu_NanoAOD_59.root"
+  ],
+  "nEvents": 13721063,
+  "nGenEvents": 13721063,
+  "nSumOfWeights": 13703743.0,
+  "isData": false
+}

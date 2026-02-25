@@ -1,0 +1,27 @@
+{
+  "xsec": 290.19,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "W3JetsToLNu",
+  "options": "",
+  "files": [
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_6.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_17.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_41.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_42.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_3.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_43.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_44.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_45.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_46.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_5.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_50.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_61.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_64.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W3JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W3JetsToLNu_NanoAOD_65.root"
+  ],
+  "nEvents": 10716623,
+  "nGenEvents": 10716623,
+  "nSumOfWeights": 10672165.0,
+  "isData": false
+}

@@ -1,0 +1,32 @@
+{
+  "xsec": 799.38,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "W2JetsToLNu",
+  "options": "",
+  "files": [
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_39.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_1.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_4.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_10.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_40.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_100.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_41.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_101.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_43.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_42.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_44.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_104.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_46.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_106.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_47.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_55.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_108.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_53.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/W2JetsToLNu_TuneCP5_5020GeV-madgraphMLM-pythia8/W2JetsToLNu_NanoAOD_11.root"
+  ],
+  "nEvents": 10037748,
+  "nGenEvents": 10037748,
+  "nSumOfWeights": 10013466.0,
+  "isData": false
+}

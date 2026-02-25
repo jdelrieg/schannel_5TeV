@@ -1,0 +1,22 @@
+{
+  "xsec": 1.778072,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "tW",
+  "options": "",
+  "files": [
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_11.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_12.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_13.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_14.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_15.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_16.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_17.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_18.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_5p02TeV-powheg-pythia8/top-tW_PSWeights_NanoAOD_19.root"
+  ],
+  "nEvents": 3659953,
+  "nGenEvents": 3659953,
+  "nSumOfWeights": 9805566.639588937,
+  "isData": false
+}

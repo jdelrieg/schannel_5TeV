@@ -1,0 +1,21 @@
+{
+  "xsec": 1.823,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "schannel",
+  "options": "",
+  "files": [
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_top_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/top-schannel_NanoAOD_1.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_top_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/top-schannel_NanoAOD_2.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_top_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/top-schannel_NanoAOD_3.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_top_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/top-schannel_NanoAOD_4.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_top_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/top-schannel_NanoAOD_5.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_top_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/top-schannel_NanoAOD_6.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_top_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/top-schannel_NanoAOD_7.root",
+    "/lustrefs/analysis/nanoAODv4/5TeV/nanoAODnoSkim/ST_s-channel_top_5f_LeptonDecays_TuneCP5_13TeV-powheg-pythia8/top-schannel_NanoAOD_8.root"
+  ],
+  "nEvents": 1000000,
+  "nGenEvents": 1000000,
+  "nSumOfWeights": 494747.0060784981,
+  "isData": false
+}
