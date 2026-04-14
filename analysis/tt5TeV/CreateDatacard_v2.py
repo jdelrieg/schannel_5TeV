@@ -11,8 +11,8 @@ if  not '/' in inputFile: outpath = './'
 else: outpath = inputFile[:inputFile.rfind('/')]
 
 from PDFscaleUncertainties import Get1binScaleUnc, Get1bPDFUnc
-doPDFsplit = True
-doPDFsplit = True
+
+doPDFsplit = False
 doScalesplit = False
 
 minBkgContrib = 1e-2
@@ -22,13 +22,11 @@ minNormUnc    = 1e-3
 removezeros   = True
 reviewshapes  = True
 
-#channels = ['e', 'm']
-channels = ['e_plus','e_minus','m_plus','m_minus']
-levels = ['2j1b','3j1b','3j2b']#,'2j0b']
-systList = ['muonSF', 'elecSF', 'btagSFlight','btagSFbc','trigSF',  'prefire', 'JER', 'MC',
+channels = ['e', 'm']
+levels = ['2j1b','2j2b','3j2b']
+systList = ['muonSF', 'elecSF', 'btagSF_h','btagSF_d','trigSF',  'prefire', 'JER', 'MC',
             'AbsStat', 'AbsScale', 'AbsMPF', 'Frag', 'ECAL', 'HCAL', 'Flavor', 'RelStat',
-            'RelPt', 'RelBal', 'RelJER', 'L3Res','MET_UnclusteredEnergy','FSR', 'ISR','hdamp','UE','QCD_shape']#,'QCD_ll','QCD_lh','QCD_hl','QCD_hh'] #'btagSFlight','btagSFbc',
-#systList = ['muonSF', 'elecSF', 'btagSF','trigSF', 'FSR', 'ISR', 'prefire', 'JER', 'Total','MET_UnclusteredEnergy']
+            'RelPt', 'RelBal', 'RelJER', 'L3Res','MET_UnclusteredEnergy']#,'FSR', 'ISR','hdamp','UE','QCD_shape'] pdfs scales
 smoothDict = {}
 for iU in systList:
     smoothDict[iU] = {
@@ -201,7 +199,7 @@ def reviewBkgContrib_2(iF, blist, nlist, ch, lv):    #NOTE: this check works ass
 													 # we lower the threshold (ratioup>1->ratioup>0.5)
 													 # So this is not a perfect check but at least gives an idea and it is good to have a look at it when producing cards :)
   oblist = []; onlist = []
-  uncs=['btagSFlight','btagSFbc','elecSF', 'muonSF', 'prefire','JER','MC', 'AbsStat', 'AbsScale', 'AbsMPF', 'Frag', 'ECAL', 'HCAL', 'Flavor', 'RelStat', 'RelPt', 'RelBal', 'RelJER', 'L3Res','MET_UnclusteredEnergy','trigSF']
+  uncs=['btagSF_h','btagSF_d','elecSF', 'muonSF', 'prefire','JER','MC', 'AbsStat', 'AbsScale', 'AbsMPF', 'Frag', 'ECAL', 'HCAL', 'Flavor', 'RelStat', 'RelPt', 'RelBal', 'RelJER', 'L3Res','MET_UnclusteredEnergy','trigSF']
   thef = r.TFile(iF, "READ") #'btagSFlight','btagSFbc',
   for iP in blist:
     if iP=='QCD':oblist.append(iP);onlist.append(nlist[blist.index(iP)]);continue
@@ -255,9 +253,9 @@ def CreateDatacard(fname, outpath=outpath, oname=output):
   if not oname.endswith('.txt'): oname += '.txt'
   
   lumiUnc  = 0.0#0.019        #If wanting to add it, go to CreateDatacradFromRootfile_v2 line 278 (AddLumiUncTxt) and uncomment it
-  bkg      = ['tW', "tt", 'WJetsH','WJetsL', 'QCD', 'DY']
-  norm     = [0.056, 0.05,   0.2, 0.2,  0.3,   0.3] #QCD era 0.3        #ESTO LO CAMBIE YO
-  signal   = ['tchan','tbarchan']
+  bkg      = ['tchan','tt', 'tW','WJets','DY']
+  norm     = [0.2, 0.05,   0.056, 0.2,  0.2] #QCD era 0.3        #ESTO LO CAMBIE YO
+  signal   = 'schan'
   
   bkg, norm = reviewBkgContrib(fname, bkg, norm, chan, lev)
   bkg, norm = reviewBkgContrib_2(fname, bkg, norm, chan, lev)
@@ -268,9 +266,9 @@ def CreateDatacard(fname, outpath=outpath, oname=output):
                minNormUnc = minNormUnc, rmNegBins = removezeros, reviewshapes = reviewshapes, smoothingDict = smoothDict,
                ch = chan, lv = lev)
  
-  pdf_top, scales_top,pdf_tbar,scales_tbar = GetModUnc(path, chan, lev) #, hdamp, UE
+  #pdf_top, scales_top,pdf_tbar,scales_tbar = GetModUnc(path, chan, lev) #, hdamp, UE
 
-  if not doPDFsplit:
+  '''if not doPDFsplit:
     if isnan(pdf_top):
       print("\t- WARNING: while assuming PDF as having only norm. effect in {}-{} region it is found to be NaN! THIS SHOULD NOT HAPPEN AND WILL RESULT IN ISSUES IN COMBINE!".format(chan, lev))#print(f"\t- WARNING: while assuming PDF as having only norm. effect in {chan}-{lev} region it is found to be NaN! THIS SHOULD NOT HAPPEN AND WILL RESULT IN ISSUES IN COMBINE!")
     d.AddExtraUnc('PDF_top', pdf_top, signal[0])
@@ -301,7 +299,7 @@ def CreateDatacard(fname, outpath=outpath, oname=output):
       d.AddExtraUnc('Scales_top%d'%(i+1), scales[i], signal[0])
     scales = Get1binScaleUnc(path+ttSampleName, categories={'sample':processDic['tbarchan'], 'channel':chan, 'level':lev}, doPrint=False, returnAll=True)
     for i in range(len(scales)):
-      d.AddExtraUnc('Scales_tbar%d'%(i+1), scales[i], signal[1])
+      d.AddExtraUnc('Scales_tbar%d'%(i+1), scales[i], signal[1])'''
 
 #  if isnan(hdamp):
 #    print("\t- WARNING: while assuming hdamp unc. for ttbar as having only norm. effect in {}-{} region it is found to be NaN! THIS SHOULD NOT HAPPEN AND WILL RESULT IN ISSUES IN COMBINE!".format(chan,lev))

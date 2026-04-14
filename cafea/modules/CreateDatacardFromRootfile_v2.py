@@ -10,7 +10,7 @@ from cafea.modules.applySmoothing      import applySmoothing
 import ROOT as r
 
 class Datacard:
-  def __init__(self, fname, signal=[], bkgList=[], lumiUnc=0.0, bkgUnc=[], systList=[], nSpaces=10, outname=None, verbose = True,
+  def __init__(self, fname, signal='', bkgList=[], lumiUnc=0.0, bkgUnc=[], systList=[], nSpaces=10, outname=None, verbose = True,
                rmNegBins = True, minShapeVar = 1e-5, minNormUnc = 1e-3, tolSymmNorm = 1e-3, defaultZeroVal = 1e-5, tolstatfl = 0.5,
                tolcheck = 0.25, ch = "", lv = "", smoothingDict = None, reviewshapes = True):
     if rmNegBins:
@@ -37,8 +37,8 @@ class Datacard:
     self.minNormUnc  = minNormUnc
     self.tolstatfl   = tolstatfl
     self.tolcheck   = tolcheck
-    #self.nBinsReal = self.f.get(signal if signal != "" else bkgList[0]).to_pyroot().GetNbinsX()
-    self.nBinsReal = self.f.get(signal[0]).to_pyroot().GetNbinsX()#
+    self.nBinsReal = self.f.get(signal if signal != "" else bkgList[0]).to_pyroot().GetNbinsX()
+    #self.nBinsReal = self.f.get(signal[0]).to_pyroot().GetNbinsX()#
     self.ch = ch
     self.lv = lv
     return
@@ -66,7 +66,7 @@ class Datacard:
     return self.outpath + self.outname
   
   def SetSignal(self, signal):
-    if isinstance(signal, str) and ',' in signal: signal = signal.replace(' ', '').split(',')
+    #if isinstance(signal, str) and ',' in signal: signal = signal.replace(' ', '').split(',')
     self.signal = signal
 
   def SetBkg(self, bkg):
@@ -95,20 +95,12 @@ class Datacard:
     self.extraUnc[name] = {'process':pr, 'value':val}
 
   def nProcess(self):
-    return len(self.bkg)+2#1
+    return len(self.bkg)+1
 
-  def ProcessList_or(self):
+  def ProcessList(self):
     return [self.signal] + self.bkg
  
-  def ProcessList(self):
-    original =[self.signal] + self.bkg
-    flat_list=[]
-    for item in original:
-      if isinstance(item,list):
-        flat_list.extend(item)
-      else:
-        flat_list.append(item)
-    return flat_list
+
 
   def FixStringSpace(self, s):
     while len(s) < self.nSpaces: s+= ' ' 
@@ -128,7 +120,7 @@ class Datacard:
 
   def AddTxtHeader(self):
     self.AddLine('imax %i number of bins'%self.nBins)
-    self.AddLine('jmax %i processes minus 2'%(len(self.bkg)+1))
+    self.AddLine('jmax %i processes minus 1'%(len(self.bkg)))
     self.AddLine('kmax * number of nuisance parameters')
     self.AddSep()
     self.AddLine('shapes * %s %s $PROCESS $PROCESS_$SYSTEMATIC'%(self.chName, self.fname.split("/")[-1]))
@@ -297,7 +289,7 @@ class Datacard:
     return sum(vals)
 
   def GetProcessRates(self):
-    print('processList',ak.flatten(self.ProcessList()))
+    #print('processList',ak.flatten(self.ProcessList()))
     return ['%1.5f'%(self.Yield(pr)) for pr in self.ProcessList()]
 
   def GetNormUncProcess(self, pr):
